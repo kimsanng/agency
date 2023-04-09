@@ -1,0 +1,379 @@
+
+body{overflow-x: hidden;}
+@media (max-width: 768px) {
+  .cd-section {
+    height: auto;
+  }
+
+  .cd-section > div {
+    height: auto;
+  }
+
+  .content {
+    position: static;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* header */
+  header {
+    transition: 0.5s;
+    z-index: 1;
+  }
+  header.active {
+    background-color: #fff;
+    
+  }
+  .menu {
+    display: block;
+    line-height: 40px;
+    margin-top: 60px;
+  }
+  .slogan {
+    display: none;
+  }
+  .gnb {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -270px;
+    width: 250px;
+    height: 100vh;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  .gnb.active {
+    right: 0;
+  }
+  .menu a {
+    text-align: right;
+    display: block;
+    padding-right: 20px;
+    color: #000;
+    font-size: 18px;
+  }
+
+  /* trigger */
+  .trigger {
+    display: block;
+    width: 24px;
+    height: 14px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  .trigger span {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: #000;
+    transition: 0.5s;
+  }
+  .trigger span:nth-child(1) {
+    top: 0;
+  }
+  .trigger span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+  }
+  .trigger span:nth-child(3) {
+    top: 100%;
+  }
+  .trigger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  .trigger.active span:nth-child(2) {
+    top: 50%;
+    width: 80%;
+    opacity: 0;
+  }
+  .trigger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .to-top {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    border: 1px solid #fff;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    transform: translateY(30px);
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .to-top.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .btn_careers {
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  .cd-vertical-nav {
+    display: none;
+  }
+  /* section home */
+  .home_inner {
+    height: 100vh;
+  }
+
+  .home_text {
+    transform: translate(-50%, -50%) scale(0.7);
+    width: 100%;
+  }
+
+  .home_items {
+    left: 20px;
+  }
+
+  .home_items span {
+    font-size: 50px;
+  }
+
+  /* section about */
+
+  .about_inner {
+    height: 100%;
+    padding: 80px 20px 20px 20px;
+    background: #0dace3;
+  }
+  .about_items {
+    width: 100%;
+    position: static;
+    margin-left: 0;
+    transform: none;
+    text-align: center;
+  }
+
+  .item img {
+    float: none;
+    height: 70px;
+    margin-right: 0;
+   
+  }
+  .item h3{
+    font-size: 20px;
+    text-align: center;
+  }
+  .item p{
+    font-size: 15px;
+  }
+  /* section plan */
+  .plan_inner {
+    height: auto;
+    padding: 20px;
+  }
+  .plan_items {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+
+  .plan_items > div {
+    height: 100%;
+  }
+  .plan_info > div {
+    float: none;
+    width: 100%;
+  }
+  .plan_photo img {
+    width: 100%;
+    height: auto;
+  }
+
+  .plan_heading {
+    padding-right: 0;
+  }
+
+  .plan_info {
+    margin-bottom: 40px;
+  }
+  .history_info p{
+    display: none;
+  }
+  /* section awards */
+
+  .awards_inner {
+    height: auto;
+    border: none;
+  }
+
+  .awards_inner > div {
+    float: none;
+    width: 100%;
+  }
+  .about_wrap,
+  .victory img {
+    position: static;
+    transform: none;
+    padding: 40px 20px;
+  }
+
+  .about_wrap {
+    width: 100%;
+  }
+
+  .victory {
+    text-align: center;
+  }
+
+  /* section Location */
+  .location_inner {
+    height: 100%;
+  }
+
+  .location_items .office{
+    padding: 0;
+    padding-top: 25px;
+  }
+  .location_items {
+    width: 100%;
+    position: relative;
+    transform: none;
+    top: 0;
+    left: 0;
+  }
+
+  .location_items > div {
+    float: none;
+    width: 100%;
+    padding: 70px 20px 20px 20px;
+  }
+  .service{
+    display: none;
+  }
+  /* section contact */
+  .contact_inner {
+    height: auto;
+  }
+
+  .contact_items {
+    width: 100%;
+    position: static;
+    transform: none;
+  }
+
+  .contact_items > div {
+    float: none;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* section service */
+
+
+  /* section project */
+
+  .project_inner {
+    height: auto;
+    border: none;
+  }
+
+  .tab > div {
+    font: none;
+    width: 100%;
+  }
+
+  .view_project {
+    width: 100%;
+  }
+
+  .project_info {
+    padding: 20px;
+  }
+  .project_info p {
+    position: relative;
+  }
+  .detail div {
+    font-size: 13px;
+  }
+
+  .btn {
+    width: 100%;
+    bottom: 10px;
+  }
+
+  /* sub page : Hiring */
+
+  .carees_main {
+    height: 300px;
+  }
+  .carees_items {
+    width: 100%;
+    top: 65%;
+  }
+  .carees_items h1 {
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  .caress_info {
+    padding: 20px;
+  }
+  .caress_info > div {
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+
+  .center_child {
+    position: static;
+    transform: none;
+    width: 100%;
+  }
+
+  .sub_slogan p {
+    font-size: 26px;
+  }
+
+  .sub_slogan {
+    padding: 50px 0;
+  }
+
+  .sub_slogan p:before {
+    top: -120px;
+    left: -10px !important;
+  }
+  .sub_slogan p:after{
+    bottom: -100px ;
+    right: -10px !important; 
+  }
+ 
+  .carees_contact ul {
+    display: block;
+    width: 100%;
+  }
+
+  .center_child h2 {
+    font-size: 22px;
+  }
+
+  .featherlight .featherlight-close-icon {
+    font-size: 24px;
+    right: 20px;
+    top: 35px;
+  }
+  /* sub page project */
+  .carees-main.project_main,
+  .carees-main.project_bg1,
+  .carees-main.project_bg2 {
+    height: 70vh2
+  }
+  .carees_main.project_main .carees_items h1,
+  .carees_main.project_bg1 .carees_items h1,
+  .carees_main.project_bg2 .carees_items h1 {
+    font-size: 40px;
+  }
+
+  .photo.project_info {
+    font-size: 19px;
+    top: -50px;
+  }
+}
